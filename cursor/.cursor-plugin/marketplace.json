@@ -1,13 +1,14 @@
 {
-  "name": "cursor-plugin-starters",
+  "name": "tines-3b-cursor-plugin",
   "owner": {
-    "name": "Your Org",
-    "email": "plugins@example.com"
+    "name": "Tines",
+    "email": "hello@tines.com"
   },
   "metadata": {
-    "description": "Starter marketplace template for Cursor plugins",
+    "description": "Tines 3B plugin for the Cursor marketplace",
     "version": "0.1.0"
   },
+  # these to be updated with the correct data
   "plugins": [
     {
       "name": "starter-simple",

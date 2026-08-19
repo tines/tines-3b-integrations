@@ -1,13 +1,15 @@
 {
-  "name": "starter-simple",
-  "displayName": "Simple Starter",
+  "name": "tines-3b-mcp",
+  "displayName": "Tines 3B MCP",
   "version": "0.1.0",
-  "description": "Minimal Cursor plugin starter with rules and skills.",
+  "description": "Connect Cursor to your Tines 3B tenant via MCP",
   "author": {
-    "name": "Your Org",
-    "email": "plugins@example.com"
+    "name": "Tines",
+    "email": "hello@tines.com"
   },
-  "license": "MIT",
+  # should there be a licence listed here?
+  "license": "REPLACE_THIS",
   "keywords": ["cursor", "plugin", "rules", "skills"],
+  # we need a 3B logo here - do we have approved ones ready?
   "logo": "assets/logo.svg"
 }
