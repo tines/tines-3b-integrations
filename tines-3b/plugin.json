@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "tines-3b",
+  "version": "0.1.0",
+  "description": "Connect to a Tines 3B tenant over MCP.",
+  "author": {
+    "name": "Tines"
+  },
+  "homepage": "https://www.tines.com/3b/",
+  "repository": "https://github.com/tines/tines-3b-integrations",
+  "license": "MIT",
+  "keywords": ["tines", "3b", "mcp", "workflows"]
+}
