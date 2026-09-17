@@ -1,18 +1,17 @@
 {
-  "name": "tines-3b",
+  "name": "tines-3b-integrations",
   "owner": {
     "name": "Tines"
   },
   "metadata": {
-    "description": "Agent Plugins for connecting to Tines 3B",
-    "version": "0.1.0"
+    "description": "Tines 3B integrations for agent platforms and marketplaces",
+    "version": "1.0.0"
   },
   "plugins": [
     {
       "name": "tines-3b",
-      "source": "tines-3b",
-      "description": "Connect to a Tines 3B tenant over MCP.",
-      "logo": "tines-3b/assets/logo.svg"
+      "source": "cursor",
+      "description": "Explore, run, and build Tines 3B workflows from your agent."
     }
   ]
 }
