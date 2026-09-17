@@ -8,7 +8,6 @@
   },
   "homepage": "https://www.tines.com/3b/",
   "repository": "https://github.com/tines/tines-3b-integrations",
-  "license": "MIT",
   "logo": "assets/logo.svg",
   "keywords": [
     "tines",

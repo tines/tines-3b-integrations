@@ -63,7 +63,3 @@ The bundled `tines-3b-skills` skill installs the [`tines/skills`](https://github
 This directory is an [Agent Plugin](https://agent-plugins.org/): `plugin.json` and `skills/` follow the 1.0.0 specification and are portable to any client that implements it.
 
 Everything Cursor-specific lives in `.cursor-plugin/plugin.json` — the logo, the marketplace category, and the `TINES_3B_MCP_URL` variable with its `mcpServers` config. Those parts cannot be expressed portably: the standard's manifest schema has no logo field, and it forbids placeholder expansion in remote MCP URLs, which a per-tenant 3B origin requires. Keeping them in the Cursor namespace leaves the portable core conformant, so a non-Cursor client reading this directory gets a valid plugin with the skill.
-
-## License
-
-MIT
