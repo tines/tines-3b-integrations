@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "tines-3b",
+  "version": "1.0.0",
+  "description": "Explore, run, and build Tines 3B workflows from your agent.",
+  "author": {
+    "name": "Tines",
+    "url": "https://www.tines.com/3b/"
+  },
+  "homepage": "https://www.tines.com/3b/",
+  "repository": "https://github.com/tines/tines-3b-integrations",
+  "keywords": [
+    "tines",
+    "3b",
+    "mcp",
+    "workflows",
+    "automation",
+    "security",
+    "orchestration"
+  ]
+}
