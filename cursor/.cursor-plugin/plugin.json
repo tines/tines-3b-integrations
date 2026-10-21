@@ -36,11 +36,6 @@
     },
     "required": ["TINES_3B_MCP_URL"]
   },
-  "mcpServers": {
-    "tines-3b": {
-      "type": "http",
-      "url": "${TINES_3B_MCP_URL}"
-    }
-  },
+  "mcpServers": "./mcp.json",
   "skills": "./skills/"
 }

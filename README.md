@@ -4,7 +4,7 @@ Integrations that add [Tines 3B](https://www.tines.com/3b/) functionality to oth
 
 | Platform | Directory | Notes |
 |:---------|:----------|:------|
-| Cursor | [`cursor/`](cursor/) | [Agent Plugin](https://agent-plugins.org/) with a Cursor manifest overlay. Listed via [`.cursor-plugin/marketplace.json`](.cursor-plugin/marketplace.json). |
+| Cursor | [`cursor/`](cursor/) | Cursor plugin (`.cursor-plugin/plugin.json` + `mcp.json`). Listed via [`.cursor-plugin/marketplace.json`](.cursor-plugin/marketplace.json). |
 
 ## Adding a platform
 
