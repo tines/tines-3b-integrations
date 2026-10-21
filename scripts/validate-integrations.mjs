@@ -313,11 +313,12 @@ function validateServers(servers, label, origin) {
   return true;
 }
 
-async function validateMcp(pluginDir, cursorManifest, label) {
-  // An mcp.json at the plugin root is a standard location, so anything there
-  // must satisfy the standard. Placeholder expansion in remote URLs does not.
+async function validateMcp(pluginDir, agentManifest, cursorManifest, label) {
+  // An mcp.json in an Agent Plugin directory is a standard location, so
+  // anything there must satisfy the Agent Plugins schema (which forbids
+  // placeholder expansion in remote URLs).
   const rootMcpPath = path.join(pluginDir, "mcp.json");
-  if (await pathExists(rootMcpPath)) {
+  if (agentManifest && (await pathExists(rootMcpPath))) {
     const rootMcp = await readJsonFile(rootMcpPath, `${label}: mcp.json`);
     if (rootMcp) {
       if (rootMcp.$schema !== AGENT_PLUGINS_MCP_SCHEMA) {
@@ -434,11 +435,6 @@ async function validateIntegration(integration) {
   if (agentManifest && cursorManifest) {
     validateManifestAgreement(agentManifest, cursorManifest, label);
   }
-  if (!agentManifest) {
-    addWarning(
-      `${label}: no Agent Plugins plugin.json, so this integration is client-specific and not portable.`
-    );
-  }
 
   if (cursorManifest) {
     for (const field of ["logo", "rules", "agents", "commands"]) {
@@ -449,7 +445,7 @@ async function validateIntegration(integration) {
   }
 
   await validateSkills(dir, cursorManifest?.skills, label);
-  await validateMcp(dir, cursorManifest, label);
+  await validateMcp(dir, agentManifest, cursorManifest, label);
   await validateLicense(dir, cursorManifest ?? agentManifest, label);
 
   if (!(await pathExists(path.join(dir, "README.md")))) {
